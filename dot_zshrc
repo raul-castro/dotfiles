@@ -1,0 +1,6 @@
+# fnm nodejs
+eval "$(fnm env --use-on-cd)"
+
+# Starship
+eval "$(starship init zsh)"
+
