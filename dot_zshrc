@@ -4,3 +4,13 @@ eval "$(fnm env --use-on-cd)"
 # Starship
 eval "$(starship init zsh)"
 
+# Basic auto/tab complete:
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)	# Include hidden files
+
+# Syntax Highlighting, should be last.
+source ~/.scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+
