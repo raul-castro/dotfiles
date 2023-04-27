@@ -1,4 +1,4 @@
-# fnm nodejs
+#fnm nodejs
 eval "$(fnm env --use-on-cd)"
 
 # Starship
@@ -10,6 +10,27 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)	# Include hidden files
+
+# Some Aliases
+## Managing JSON on clipoard and format it
+alias jj="pbpaste | json_pp | pbcopy"
+alias jjj="pbpaste | json_pp "
+
+## Creating directories
+function take {
+  mkdir -p $1
+  cd $1
+}
+## Clear
+alias c="clear"
+## Source
+alias s="source ~/.zshrc"
+## Better file listing
+alias l ="exa -lah"
+alias ls =exa
+alias sl =exa
+## Better trash
+alias rm=trash
 
 # Syntax Highlighting, should be last.
 source ~/.scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
