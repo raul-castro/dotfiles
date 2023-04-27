@@ -5,7 +5,7 @@ eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
 
 # Basic auto/tab complete:
-autoload -U compinit
+autoload -Uz compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
