@@ -1,4 +1,7 @@
-#fnm nodejs
+# Anaconda
+export PATH="/usr/local/anaconda3/bin:$PATH"
+
+# fnm nodejs
 eval "$(fnm env --use-on-cd)"
 
 # Starship
