@@ -1,5 +1,9 @@
 # Anaconda
 export PATH="/usr/local/anaconda3/bin:$PATH"
+# Golang
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 # fnm nodejs
 eval "$(fnm env --use-on-cd)"
