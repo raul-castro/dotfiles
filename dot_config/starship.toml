@@ -1,0 +1,42 @@
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+
+# Which is equivalent to
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$nodejs\
+$rust\
+$c\
+$cmd_duration $jobs $time\
+$line_break\
+$character"""
+
+[fill]
+symbol = " "
+
+[directory]
+style = "blue"
+read_only= "🔒"
+
+[time]
+format = "[$time]($style)"
+disabled = false
+style = "purple"
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+
+[rust]
+format = "[$symbol($version )]($style)"
+
+[c]
+detect_extensions = ["c", "h", "cc", "cpp", "hh", "hpp"]
