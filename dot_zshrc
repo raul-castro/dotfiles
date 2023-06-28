@@ -1,5 +1,6 @@
 # Anaconda
 export PATH="/usr/local/anaconda3/bin:$PATH"
+
 # Golang
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"
@@ -10,6 +11,9 @@ eval "$(fnm env --use-on-cd)"
 
 # Starship
 eval "$(starship init zsh)"
+
+# Hledger env variable
+export LEDGER_FILE="~/finance/2023.journal"
 
 # Basic auto/tab complete:
 autoload -Uz compinit
