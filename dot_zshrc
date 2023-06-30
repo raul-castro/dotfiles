@@ -13,7 +13,7 @@ eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
 
 # Hledger env variable
-export LEDGER_FILE="~/finance/2023.journal"
+export LEDGER_FILE=~/finance/2023.journal
 
 # Basic auto/tab complete:
 autoload -Uz compinit

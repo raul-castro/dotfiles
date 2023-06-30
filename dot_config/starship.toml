@@ -16,7 +16,7 @@ $fill\
 $nodejs\
 $rust\
 $c\
-$cmd_duration $jobs $time\
+${custom.readme} $cmd_duration $jobs $time\
 $line_break\
 $character"""
 
@@ -40,3 +40,10 @@ format = "[$symbol($version )]($style)"
 
 [c]
 detect_extensions = ["c", "h", "cc", "cpp", "hh", "hpp"]
+
+[custom.readme]
+detect_files = ['README.md', 'README']
+style = "red"
+format = "[$symbol](style)"
+
+
