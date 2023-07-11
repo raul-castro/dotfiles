@@ -37,9 +37,9 @@ alias c="clear"
 ## Source
 alias s="source ~/.zshrc"
 ## Better file listing
-alias l="exa -lah"
-alias ls=exa
-alias sl=exa
+alias l="exa -lah --icons"
+alias ls="exa --icons"
+alias sl="exa --icons"
 ## Better trash
 alias rm=trash
 
