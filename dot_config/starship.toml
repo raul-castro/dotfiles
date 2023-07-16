@@ -12,11 +12,15 @@ $git_branch\
 $git_state\
 $git_status\
 $git_metrics\
+$git_commit\
+$hostname\
 $fill\
 $nodejs\
 $rust\
 $c\
-${custom.hledher} $cmd_duration $jobs $time\
+$golang\
+$haskell\
+${custom.hledger} $cmd_duration $jobs $time\
 $line_break\
 $character"""
 
@@ -41,7 +45,7 @@ format = "[$symbol($version )]($style)"
 [c]
 detect_extensions = ["c", "h", "cc", "cpp", "hh", "hpp"]
 
-[custom.hledher]
+[custom.hledger]
 detect_extensions= ['journal', 'ledger']
 symbol = "💸"
 style = "green"

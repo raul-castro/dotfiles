@@ -1,4 +1,7 @@
 #Default programs
 export EDITOR="nvim"
 
+# Hledger env variable
+export LEDGER_FILE=~/finance/2023.journal
+
 eval "$(/usr/local/bin/brew shellenv)"
