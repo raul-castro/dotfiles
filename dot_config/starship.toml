@@ -18,6 +18,7 @@ $fill\
 $nodejs\
 $rust\
 $c\
+$python\
 $golang\
 $haskell\
 ${custom.hledger} $cmd_duration $jobs $time\
@@ -39,6 +40,7 @@ style = "purple"
 [nodejs]
 format = "[$symbol($version )]($style)"
 
+
 [rust]
 format = "[$symbol($version )]($style)"
 
@@ -50,5 +52,3 @@ detect_extensions= ['journal', 'ledger']
 symbol = "💸"
 style = "green"
 format = "[$symbol](style)"
-
-
