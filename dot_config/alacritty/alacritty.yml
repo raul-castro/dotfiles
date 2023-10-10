@@ -17,7 +17,8 @@ import:
 #  - /path/to/alacritty.yml
 
 # Tokionight, uncomment the flavour you want:
-- ~/.config/alacritty/tokionight/night.yml
+  - ~/config/alacritty/flexoki/flexoki.yaml
+#  - ~/.config/alacritty/tokionight/night.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
@@ -79,7 +80,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.85
+  #opacity: 0.85
 
 
   option_as_alt: Both
