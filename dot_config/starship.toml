@@ -16,9 +16,11 @@ $git_commit\
 $hostname\
 $fill\
 $nodejs\
+$bun\
 $rust\
 $c\
 $python\
+$lua\
 $golang\
 $haskell\
 $elixir\
