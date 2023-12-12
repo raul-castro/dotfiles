@@ -34,9 +34,8 @@ alias c="clear"
 ## Source
 alias s="source ~/.zshrc"
 ## Better file listing
-alias l="exa -lah --icons --git"
-alias ls="exa --icons --git"
-alias sl="exa --icons --git"
+alias l="eza -l -a -h --git --time-style='long-iso' --icons='always'"
+alias ls="eza --icons --git"
 ## Better trash
 alias rm=trash
 
