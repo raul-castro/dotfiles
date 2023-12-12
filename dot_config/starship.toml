@@ -21,6 +21,7 @@ $c\
 $python\
 $golang\
 $haskell\
+$elixir\
 ${custom.hledger} $cmd_duration $jobs $time\
 $line_break\
 $character"""
@@ -40,6 +41,8 @@ style = "purple"
 [nodejs]
 format = "[$symbol($version )]($style)"
 
+[elixir]
+symbol = "🔮 "
 
 [rust]
 format = "[$symbol($version )]($style)"
