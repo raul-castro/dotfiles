@@ -3,12 +3,11 @@ export PATH="/usr/local/anaconda3/bin:$PATH"
 
 # Golang
 export GOPATH=$HOME/go
-export GOROOT="$(brew --prefix golang)/libexec"
+export GOROOT=". ~/.asdf/plugins/golang/set-env.zsh"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
-# fnm nodejs
-eval "$(fnm env --use-on-cd)"
-
+# ASDF
+. $(brew --prefix asdf)/libexec/asdf.sh
 # Starship
 eval "$(starship init zsh)"
 

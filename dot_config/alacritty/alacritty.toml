@@ -1,0 +1,22 @@
+import = ["/Users/raul_castro/.config/alacritty/tokionight/night.toml"]
+live_config_reload = true
+
+[font]
+size = 18.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+option_as_alt = "Both"
+
+[window.padding]
+x = 12
+y = 12
