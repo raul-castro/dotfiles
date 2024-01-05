@@ -1,4 +1,4 @@
-import = ["/Users/raul_castro/.config/alacritty/tokionight/night.toml"]
+import = ["~/.config/alacritty/tokionight/night.toml"]
 live_config_reload = true
 
 [font]
