@@ -2,7 +2,7 @@
 export EDITOR="nvim"
 
 # Hledger env variable
-export LEDGER_FILE=~/finance/2023.journal
+export LEDGER_FILE=~/finance/2024.journal
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
