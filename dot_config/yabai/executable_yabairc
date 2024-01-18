@@ -33,3 +33,5 @@ yabai -m rule --add app="^FaceTime$" manage=off
 yabai -m rule --add app="^Screen Sharing$" manage=off
 yabai -m rule --add app="^Safe Exam Browser$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Mail$" manage=off
+yabai -m rule --add app="^Discord$" manage=off
