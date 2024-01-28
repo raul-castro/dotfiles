@@ -16,15 +16,22 @@ end
 config.color_scheme = 'tokyonight_night'
 
 -- Font
-config.font = wezterm.font 'JetBrainsMono Nerd Font'
+config.font = wezterm.font_with_fallback {
+  "JetBrainsMono Nerd Font",
+  "Apple Color Emoji"
+}
+-- config.font = font.font
+-- config.font_size = font.size
 config.font_size = 14
 
+-- Window
 config.enable_tab_bar = false
 
 config.window_background_opacity = 0.96
 
 -- Hide the window decoration
 config.window_decorations = "RESIZE"
+
 
 -- and finally, return the configuration to wezterm
 return config
