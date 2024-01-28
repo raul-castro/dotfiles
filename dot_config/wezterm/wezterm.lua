@@ -17,7 +17,7 @@ config.color_scheme = 'tokyonight_night'
 
 -- Font
 config.font = wezterm.font 'JetBrainsMono Nerd Font'
-config.font_size = 13.5
+config.font_size = 14
 
 config.enable_tab_bar = false
 
