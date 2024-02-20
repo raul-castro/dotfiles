@@ -4,6 +4,10 @@ local wezterm = require 'wezterm'
 -- This table will hold the configuration.
 local config = {}
 
+-- colors, metadata = wezterm.color.load_scheme("wezterm/colors/flexoki.toml ")
+-- print(metadata)
+-- print(colors)
+
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
 if wezterm.config_builder then
@@ -13,8 +17,8 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'tokyonight_night'
-
+-- config.colors = colors
+config.color_scheme = "tokyonight_night"
 -- Font
 config.font = wezterm.font_with_fallback {
   "JetBrainsMono Nerd Font",
