@@ -79,27 +79,6 @@ require("lazy").setup({
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
   {
-    "stevearc/conform.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      local conform = require("conform")
-
-      conform.setup({
-        formatters_by_ft = {
-          lua = { "stylua" },
-        },
-      })
-
-      vim.keymap.set({ "n", "v" }, "<leader>l", function()
-        conform.format({
-          lsp_fallback = true,
-          async = false,
-          timeout_ms = 1000,
-        })
-      end, { desc = "Format file or range(in visual mode)" })
-    end,
-  },
-  {
     -- LSP Configuration & Plugins
     "neovim/nvim-lspconfig",
     dependencies = {
