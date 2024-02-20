@@ -3,7 +3,7 @@ return {
   'nvim-lualine/lualine.nvim',
   -- See `:help lualine.txt`
   dependencies = {
-    'nvim-tree/nvim-web-devicons'
+    'nvim-tree/nvim-web-devicons',
   },
   opts = {
     options = {
@@ -16,9 +16,9 @@ return {
   sections = {
     lualine_x = {
       {
-        require("lazy.status").updates,
-        cond = require("lazy.status").has_updates,
-        color = { fg = "#ff9e64" },
+        require('lazy.status').updates,
+        cond = require('lazy.status').has_updates,
+        color = { fg = '#ff9e64' },
       },
     },
   },

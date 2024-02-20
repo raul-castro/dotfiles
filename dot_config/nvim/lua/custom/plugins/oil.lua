@@ -1,9 +1,9 @@
 return {
-  'stevearc/oil.nvim',
+  "stevearc/oil.nvim",
   opts = {},
   -- Optional dependencies
   dependencies = { "nvim-tree/nvim-web-devicons" },
   keys = {
-    { "-", "<cmd>Oil --float<cr>", desc = "Oil file explorer" }
-  }
+    { "-", "<cmd>Oil --float<cr>", desc = "Oil file explorer" },
+  },
 }
