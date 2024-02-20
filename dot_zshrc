@@ -26,9 +26,6 @@ alias s="source ~/.zshrc"
 alias l="eza -l -a -h --git --time-style='long-iso' --icons='always'"
 alias ls="eza --icons --git"
 
-### chezmoi apply and copy lazy-lock nvim
-alias chezmoi-apply='chezmoi apply -e "cp ~/.config/nvim/lazy-lock.json ~/.local/share/chezmoi/dot_config/nvim/lazy-lock.json"'
-
 # ASDF
 . $(brew --prefix asdf)/libexec/asdf.sh
 

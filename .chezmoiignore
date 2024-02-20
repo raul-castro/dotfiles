@@ -121,4 +121,7 @@ Support
 .todoist.config.json
 .yarnrc
 
+.config/nvim/lazy-lock.json
+
+
 **/.DS_Store
