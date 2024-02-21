@@ -369,11 +369,19 @@ require('mason-tool-installer').setup {
 --  define the property 'filetypes' to the map in question.
 local servers = {
   clangd = {},
-  -- gopls = {},
-  -- pyright = {},
-  -- rust_analyzer = {},
+  cmake = {},
+  gopls = {},
+  pyright = {},
+  rust_analyzer = {},
   tsserver = {},
   html = { filetypes = { 'html', 'twig', 'hbs' } },
+  cssls = {},
+  tailwindcss = {},
+  svelte = {},
+  emmet_ls = {},
+  elixirls = {},
+  texlab = {},
+  sqlls = {},
 
   lua_ls = {
     Lua = {

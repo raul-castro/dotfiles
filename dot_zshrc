@@ -28,6 +28,7 @@ alias ls="eza --icons --git"
 
 # ASDF
 . $(brew --prefix asdf)/libexec/asdf.sh
+. ~/.asdf/plugins/golang/set-env.zsh
 
 # Starship
 eval "$(starship init zsh)"
