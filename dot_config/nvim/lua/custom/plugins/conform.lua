@@ -1,6 +1,6 @@
 return {
   'stevearc/conform.nvim',
-  event = { 'BufWritePre' },
+  event = { 'BufWritePre', 'BufNewFile' },
   cmd = { 'ConformInfo' },
   keys = {
     {
@@ -20,6 +20,7 @@ return {
       lua = { 'stylua' },
       python = { 'isort', 'black' },
       javascript = { { 'prettierd', 'prettier' } },
+      elixir = { 'mix' },
     },
     -- Set up format-on-save
     format_on_save = { timeout_ms = 500, lsp_fallback = true },
