@@ -7,12 +7,12 @@ then
   compinit
 fi
 
-# Basic auto/tab complete:
-autoload -Uz compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)	# Include hidden files
+# # Basic auto/tab complete:
+# autoload -Uz compinit
+# zstyle ':completion:*' menu select
+# zmodload zsh/complist
+# compinit
+# _comp_options+=(globdots)	# Include hidden files
 
 # Zsh autocomplete on history
 source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
@@ -29,6 +29,12 @@ alias ls="eza --icons --git"
 # ASDF
 . $(brew --prefix asdf)/libexec/asdf.sh
 . ~/.asdf/plugins/golang/set-env.zsh
+
+## Man Pager
+#Set Bat as pager
+#export MANPAGER="sh -c 'col -bx | bat --language=man -p'"
+#Set Nvim as pager
+export MANPAGER='nvim +Man!'
 
 # Starship
 eval "$(starship init zsh)"
