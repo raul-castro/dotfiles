@@ -25,6 +25,8 @@ alias s="source ~/.zshrc"
 ## Better file listing
 alias l="eza -l -a -h --git --time-style='long-iso' --icons='always'"
 alias ls="eza --icons --git"
+## Nvim configs
+alias kvim="NVIM_APPNAME=kickstart.nvim nvim" #kickstart repo
 
 # ASDF
 . $(brew --prefix asdf)/libexec/asdf.sh
