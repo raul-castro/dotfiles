@@ -24,6 +24,7 @@ README.md
 .cache/yarn
 .cache/zsh
 .config/zsh/.zcompdump*
+cache.db
 
 # SSH
 .ssh/environment-
