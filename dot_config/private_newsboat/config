@@ -1,0 +1,64 @@
+prepopulate-query-feeds yes
+refresh-on-startup yes
+reload-threads 100
+
+
+# -- display -------------------------------------------------------------------
+
+feed-sort-order unreadarticlecount-asc
+
+datetime-format "%F"
+
+
+# col # item              # fg      # bg
+color background          color7   default        # the most bottom bar
+color listnormal          color7   default        # unfocused and without N
+color listnormal_unread   color6   default        # unfocused and with N
+color listfocus           color7   color8   bold  # focused and without N
+color listfocus_unread    color7   color8   bold  # focused but with N
+color info                color1   default         # bottom and top info bars
+color article             color7   default        # content of an article
+color background          default  default
+
+# highlights
+highlight article "^(Feed|Link):.*$" color6 default 
+highlight article "^(Title|Date|Author):.*$" color6 default bold
+highlight article "https?://[^ ]+" color10 default underline
+highlight article "\\[image\\ [0-9]+\\]" color10 default bold
+
+articlelist-format "%4i %f %D  %?T?|%-17T| ?%t"
+
+
+text-width 80
+
+# -- navigation ----------------------------------------------------------------
+
+goto-next-feed no
+
+browser "brave --new-tab %u"
+
+# Below bindings apply vim like keybindings in most places
+
+bind-key h quit articlelist
+bind-key h quit article
+bind-key h quit tagselection
+bind-key h quit feedlist
+bind-key j down feedlist
+bind-key j down tagselection
+bind-key j next articlelist
+bind-key j down article
+bind-key J next-feed articlelist
+bind-key k up feedlist
+bind-key k prev articlelist
+bind-key k up tagselection
+bind-key K prev-feed articlelist
+bind-key k up article
+bind-key l open articlelist
+bind-key l open feedlist
+bind-key l open tagselection
+
+bind-key G end
+bind-key g home
+
+bind-key d pagedown
+bind-key u pageup
