@@ -28,7 +28,7 @@ alias ls="eza --icons --git"
 ## Nvim configs
 alias kvim="NVIM_APPNAME=kickstart.nvim nvim" #kickstart repo
 ## safe remove
-alias del = "rm -i"
+alias del="rm -i"
 
 # ASDF
 . $(brew --prefix asdf)/libexec/asdf.sh
