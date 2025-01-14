@@ -14,6 +14,8 @@ fi
 # compinit
 # _comp_options+=(globdots)	# Include hidden files
 
+export PATH="/Library/TeX/texbin:$PATH"
+
 # Zsh autocomplete on history
 source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
