@@ -1,4 +1,6 @@
+## -------------------------------
 # Homebrew Completions (see: https://docs.brew.sh/Shell-Completion)
+# -------------------------------
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
@@ -14,36 +16,55 @@ fi
 # compinit
 # _comp_options+=(globdots)	# Include hidden files
 
+# -------------------------------
+# Paths
+# -------------------------------
+# TeX
 export PATH="/Library/TeX/texbin:$PATH"
-
-# Zsh autocomplete on history
-source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
-# Aliases
-## Clear
-alias c="clear"
-## Source
-alias s="source ~/.zshrc"
-## Better file listing
-alias l="eza -l -a -h --git --time-style='long-iso' --icons='always'"
-alias lz="eza --icons --git"
-## Nvim configs
-alias kvim="NVIM_APPNAME=kickstart.nvim nvim" #kickstart repo
-## safe remove
-alias del="rm -i"
 
 # ASDF
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
+# cURL
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
-## Man Pager
+# -------------------------------
+# Plugins
+# -------------------------------
+# Zsh autocomplete on history
+source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+# -------------------------------
+# Prompt (Starship)
+# -------------------------------
+eval "$(starship init zsh)"
+
+## -------------------------------
+# Aliases
+# --------------------------------
+## Clear
+alias c="clear"
+
+## Reload zsh config
+alias s="source ~/.zshrc"
+
+## Better file listing (eza)
+alias l="eza -l -a -h --git --time-style='long-iso' --icons='always'"
+alias lz="eza --icons --git"
+
+## Nvim configs
+alias kvim="NVIM_APPNAME=kickstart.nvim nvim" #kickstart repo
+
+## Safe remove
+alias del="rm -i"
+
+
+# -------------------------------
+# Man Pager
+# -------------------------------
+export MANPAGER='nvim +Man!'
 #Set Bat as pager
 #export MANPAGER="sh -c 'col -bx | bat --language=man -p'"
-#Set Nvim as pager
-export MANPAGER='nvim +Man!'
-
-# Starship
-eval "$(starship init zsh)"
 
 # ZSH Syntax Highjlighting, must be the lat line to work.
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
