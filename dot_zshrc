@@ -15,15 +15,17 @@ fi
 # zmodload zsh/complist
 # compinit
 # _comp_options+=(globdots)	# Include hidden files
-
+setopt HIST_IGNORE_SPACE
 # -------------------------------
 # Paths
 # -------------------------------
 # TeX
 export PATH="/Library/TeX/texbin:$PATH"
 
-# ASDF
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+ # GNU replacements
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/gawk/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
 
 # cURL
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
@@ -38,6 +40,13 @@ source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Prompt (Starship)
 # -------------------------------
 eval "$(starship init zsh)"
+
+
+# -------------------------------
+# Mise-enplace activate
+# -------------------------------
+eval "$(mise activate zsh)"
+
 
 ## -------------------------------
 # Aliases
