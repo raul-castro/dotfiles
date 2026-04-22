@@ -1,9 +1,11 @@
 font-family = Iosevka Nerd Font Propo
 font-size = 14
-theme = tokyonight moon
+theme = lume
 background-blur-radius = 20
 background-opacity = 0.95
-
-window-padding-balance = true
-
 link-url
+window-decoration = true
+window-padding-x = 10
+window-padding-y = 10
+
+shell-integration = zsh
